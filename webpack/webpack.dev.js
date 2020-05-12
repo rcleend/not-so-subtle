@@ -1,4 +1,4 @@
-const path = require('webpack/path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -6,9 +6,6 @@ const {
   prod_Path,
   src_Path
 } = require('./path');
-const {
-  selectedPreprocessor
-} = require('./loader');
 
 module.exports = {
   entry: {
@@ -31,7 +28,7 @@ module.exports = {
       use: 'ts-loader',
       exclude: /node_modules/
     }, {
-      test: selectedPreprocessor.fileRegexp,
+      test: /\.(sass|scss|css)$/,
       use: [{
           loader: MiniCssExtractPlugin.loader
         },
@@ -49,7 +46,7 @@ module.exports = {
           }
         },
         {
-          loader: selectedPreprocessor.loaderName,
+          loader: 'sass-loader',
           options: {
             sourceMap: true
           }
