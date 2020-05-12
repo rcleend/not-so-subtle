@@ -1,37 +1,43 @@
 {
-  "name": "webpack-4-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "not-so-subtle",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "npm run build:dev",
-    "build:dev": "webpack-dev-server --config webpack/webpack.dev.js --mode none",
-    "build:prod": "webpack --config webpack/webpack.prod.js --mode production"
-  },
-  "author": "mwieth",
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^8.6.0",
-    "awesome-typescript-loader": "^5.2.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^3.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.0",
-    "node-sass": "^4.12.0",
-    "postcss-loader": "^2.1.5",
-    "sass-loader": "^7.0.2",
-    "style-loader": "^0.21.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.5",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.0.1",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-md5-hash": "0.0.6"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "core-js": "^3.6.4",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.1",
+    "vue-router": "^3.1.6",
+    "vue-property-decorator": "latest"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-pwa": "^4.3.0",
+    "@vue/cli-plugin-typescript": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "lint-staged": "^9.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.8.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
