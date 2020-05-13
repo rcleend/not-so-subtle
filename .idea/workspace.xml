@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b2628d7-0562-4967-89ca-16c85e216bb2" name="Default Changelist" comment="" />
+    <list default="true" id="7b2628d7-0562-4967-89ca-16c85e216bb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +54,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589297283283</updated>
       <workItem from="1589297284424" duration="1504000" />
-      <workItem from="1589305095167" duration="8945000" />
+      <workItem from="1589305095167" duration="10245000" />
+      <workItem from="1589392703886" duration="9169000" />
     </task>
     <servers />
   </component>
@@ -77,14 +83,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1589297412726" />
-    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589314782904">
+    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589403076456">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1589314782904" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589312457202">
+    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1589403076456" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589402173434">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1589312457202" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1589402173434" />
     <state x="685" y="385" width="540" height="343" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1589298855924">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
