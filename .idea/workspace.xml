@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2628d7-0562-4967-89ca-16c85e216bb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/context-container.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/AnimatedBlob.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animated-objects/AnimatedText.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations/AnimatedText.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -36,11 +44,11 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -86,14 +94,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1897" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1589297412726" />
-    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589403076456">
+    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589660662300">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1589403076456" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589402173434">
+    <state x="624" y="216" width="662" height="682" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1589660662300" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1589659901184">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1589402173434" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1589659901184" />
     <state x="685" y="385" width="540" height="343" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1589298855924">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

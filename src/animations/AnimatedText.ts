@@ -1,4 +1,4 @@
-import anime from "animejs";
+import anime from 'animejs';
 
 export default class AnimatedText {
     private readonly el: any;
@@ -12,7 +12,7 @@ export default class AnimatedText {
             {
                 targets: this.el.childNodes,
                 delay: (el, i) => {
-                    return i * 50
+                    return i * 50;
                 },
                 opacity: 1,
                 duration: 500,
@@ -28,12 +28,13 @@ export default class AnimatedText {
             {
                 targets: this.el.childNodes,
                 delay: (el, i) => {
-                    return i * 50
+                    return i * 50;
                 },
                 opacity: 0,
                 duration: 500,
                 translateY: [0, 30],
                 easing: 'easeInElastic',
+                complete: () => this.el.style.display = 'none',
             },
         );
         return this;

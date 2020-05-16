@@ -1,4 +1,4 @@
-import anime from "animejs";
+import anime from 'animejs';
 
 export default class AnimatedBlob {
     private readonly el: any;
@@ -7,22 +7,24 @@ export default class AnimatedBlob {
         this.el = el;
     }
 
-    public start(): void {
+    public start(): AnimatedBlob {
         anime.timeline({
             targets: this.el,
             duration: 200,
             fillOpacity: [0, 1],
             delay: this.el.dataset.animationDelay,
-            easing: 'easeOutCubic'
+            easing: 'easeOutCubic',
         }).add({
             d: [this.el.dataset.initPath, this.el.d],
             duration: 700,
             easing: 'easeOutElastic',
-            complete: () => this.animate()
+            complete: () => this.animate(),
         });
+
+        return this;
     }
 
-    public end(): void {
+    public end(): AnimatedBlob {
         anime.remove(this.el);
         anime.timeline({
             targets: this.el,
@@ -32,11 +34,14 @@ export default class AnimatedBlob {
             duration: 700,
             easing: 'easeInElastic',
             fillOpacity: [1, 0],
+            complete: () => this.el.style.display = 'none',
         });
+
+        return this;
     }
 
 
-    private animate(): void {
+    private animate(): AnimatedBlob {
         anime({
                 targets: this.el,
                 d: this.el.dataset.morphPath,
@@ -49,5 +54,8 @@ export default class AnimatedBlob {
                 loop: true,
             },
         );
+
+        return this;
     }
 }
+

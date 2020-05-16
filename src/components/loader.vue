@@ -57,25 +57,46 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
-    import AnimatedBlob from "@/animated-objects/AnimatedBlob";
-    import AnimatedText from "@/animated-objects/AnimatedText";
+    import {Component, Emit, Prop, Vue, Watch} from 'vue-property-decorator';
+    import AnimatedBlob from '@/animations/AnimatedBlob';
+    import AnimatedText from '@/animations/AnimatedText';
 
     @Component
-    export default class Loading extends Vue {
-        public mounted(): void {
-            const leftBlob: AnimatedBlob = new AnimatedBlob(document.getElementById('left-blob'));
-            const rightBlob: AnimatedBlob = new AnimatedBlob(document.getElementById('right-blob'));
-            const loadingText: AnimatedText = new AnimatedText(document.getElementById('loading-logo-text')).show();
+    export default class Loader extends Vue {
+        @Prop(Boolean) public readonly isLoading: boolean | undefined;
 
-            leftBlob.start();
-            rightBlob.start();
+        private leftBlob: any;
+        private rightBlob: any;
+        private loadingText: any;
 
-            setTimeout(() => {
-                loadingText.hide();
-                leftBlob.end();
-                rightBlob.end();
-            }, 3000);
+        private mounted(): void {
+            this.leftBlob = new AnimatedBlob(document.getElementById('left-blob'));
+            this.rightBlob = new AnimatedBlob(document.getElementById('right-blob'));
+            this.loadingText = new AnimatedText(document.getElementById('loading-logo-text'));
+
+            this.loadStart();
+        }
+
+        @Emit()
+        private loaded(): boolean {
+            return true;
+        }
+
+        @Watch('isLoading')
+        private onLoadingChange(): void {
+            this.isLoading ? this.loadStart() : this.loadFinished();
+        }
+
+        private loadStart(): void {
+            this.loadingText.show();
+            this.leftBlob.start();
+            this.rightBlob.start();
+        }
+
+        private loadFinished(): void {
+            this.loadingText.hide(this.loaded());
+            this.leftBlob.end();
+            this.rightBlob.end();
         }
     }
 
@@ -93,16 +114,14 @@
         left: 0;
         right: 0;
 
-        background-color: white;
-
         #loading-logo {
             margin: auto;
             width: 700px;
             height: auto;
         }
 
-        #loading-logo-text path{
-           opacity: 0;
+        #loading-logo-text path {
+            opacity: 0;
         }
     }
 </style>
