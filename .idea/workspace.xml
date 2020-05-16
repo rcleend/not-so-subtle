@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2628d7-0562-4967-89ca-16c85e216bb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/animated-objects/AnimatedText.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/loading-logo-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/loading-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/animated-objects/AnimatedBlob.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +57,8 @@
       <workItem from="1589305095167" duration="10245000" />
       <workItem from="1589392703886" duration="9660000" />
       <workItem from="1589473381560" duration="10090000" />
+      <workItem from="1589528518955" duration="621000" />
+      <workItem from="1589619773249" duration="1532000" />
     </task>
     <servers />
   </component>

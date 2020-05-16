@@ -2,11 +2,9 @@ import anime from "animejs";
 
 export default class AnimatedBlob {
     private readonly el: any;
-    private animation: anime.AnimeInstance;
 
     public constructor(el: any) {
         this.el = el;
-        this.animation = anime({})
     }
 
     public start(): void {
@@ -28,19 +26,18 @@ export default class AnimatedBlob {
         anime.remove(this.el);
         anime.timeline({
             targets: this.el,
-            duration: 20000,
-            d: this.el.dataset.initPath,
             delay: this.el.dataset.animationDelay / 2,
-            easing: 'easeInCubic',
         }).add({
-            duration: 200,
+            d: this.el.dataset.initPath,
+            duration: 700,
+            easing: 'easeInElastic',
             fillOpacity: [1, 0],
-            easing: 'easeInCubic'
         });
     }
 
+
     private animate(): void {
-        this.animation = anime({
+        anime({
                 targets: this.el,
                 d: this.el.dataset.morphPath,
                 duration: this.el.dataset.animationDuration,
