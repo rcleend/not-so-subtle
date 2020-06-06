@@ -1,5 +1,7 @@
 # not-so-subtle
 
+![](gh-resources/nss1.gif)
+
 ## Project setup
 ```
 npm install
